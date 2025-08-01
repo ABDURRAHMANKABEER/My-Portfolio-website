@@ -5,8 +5,18 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Poppins';
+    src: url('assets/fonts/poppins-v23-latin-regular') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Repeat for 600 and 700 weights */
+
+
 body {
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #f8fafc;
     color: #0f172a;
     line-height: 1.6;
@@ -33,4 +43,52 @@ img {
     font-size: 2.2rem;
     margin-bottom: 2rem;
     color: #0f172a;
+}
+
+/* Navbar */
+nav {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0.5rem;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #0f172a;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #334155;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #22d3ee;
+}
+
+@media (min-width: 768px) {
+    .nav-links {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
 }
