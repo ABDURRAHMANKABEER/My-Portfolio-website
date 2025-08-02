@@ -211,48 +211,168 @@ nav {
 
 /* Interests Section */
 .interests-section {
-  background-color: #f9f9f9;
-  padding: 4rem 2rem;
-  text-align: center;
+    background-color: #f9f9f9;
+    padding: 4rem 2rem;
+    text-align: center;
 }
 
 .interests-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
 .interest-card {
-  background-color: #fff;
-  border-radius: 1rem;
-  padding: 2rem 1.5rem;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-align: center;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 2rem 1.5rem;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
 }
 
 .interest-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 .interest-card .emoji {
-  font-size: 2rem;
-  display: block;
-  margin-bottom: 0.8rem;
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.8rem;
 }
 
 .interest-card h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-  color: #1e293b;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #1e293b;
 }
 
 .interest-card p {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: #475569;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #475569;
+}
+
+/* My projects section */
+.projects {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #1a1a1a;
+}
+
+.sub-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 3rem 0 1.5rem;
+    color: #0077b6;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+}
+
+.project-card img {
+    background-image: cover;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-content h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: #333;
+}
+
+.card-content p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.2rem;
+}
+
+.card-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.card-links a {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.card-links a:not(.live-link) {
+    border: 2px solid #0077b6;
+    color: #0077b6;
+    font-weight: 600;
+}
+
+.card-links a:not(.live-link):hover {
+    background-color: #0077b6;
+    color: white;
+}
+
+/* Languages section */
+.languages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.language-card {
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.language-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 0.5rem;
+}
+
+.language-card p {
+    font-weight: 500;
+    color: #334155;
+}
+
+.language-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 
