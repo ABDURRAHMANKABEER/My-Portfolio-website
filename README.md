@@ -34,8 +34,6 @@ The design emphasizes minimalism, readability, and professional aesthetics tailo
 
 > 🔗 **Live Site**: [abdurrahman-kabir-portfolio-website.vercel.app/](https://abdurrahman-kabir-portfolio-website.vercel.app/)
 
-> 📄 **CV**: [Download Resume](assets/Abdurrahman-Kabir-CV.pdf)
-
 ---
 
 ## 📂 Folder Structure
